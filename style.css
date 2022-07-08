@@ -1,0 +1,424 @@
+:root {
+    --lightmagenta: hsl(293, 100%, 63%);
+    --lightviolet: hsl(264, 100%, 61%);
+    --grayishblue: hsl(206, 6%, 79%);
+    --darkgrayishviolet: hsl(270, 7%, 64%);
+    --lightgrayishviolet: hsl(270, 20%, 96%);
+    --lightpurplegradient: hsl(268, 40%, 91%);
+    --verydarkdesaturatedviolet: hsl(271, 36%, 24%);
+    --moderateviolet: hsl(276, 55%, 52%);
+}
+
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.box1{
+    height: 900px;
+    width: 35%;
+    background-image: linear-gradient(to bottom, var(--lightmagenta) 0%, var(--lightviolet) 80%);
+    border-radius: 0 0 80% 80%;
+    position: absolute;
+    left: -150px;
+}
+
+.box2{
+    height: 900px;
+    width: 35%;
+    background-image: linear-gradient(to top, var(--lightgrayishviolet) 80%, var(--lightpurplegradient) 100%);
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    right: -150px;
+    top: 120px;
+}
+
+.mobile{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px 35px 35px 35px;
+    width: 17%;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 21.5%;
+    box-shadow: 5px 10px 15px lightgrey;
+    padding: 0 0 10px 0;
+}
+
+/* .mobile:after {
+    display: flex;
+    padding-bottom: 50%;
+} */
+
+.smallbox1{
+    height: 80px;
+    width: 95%;
+    background-image: linear-gradient(to top, var(--lightviolet) 0%, var(--lightmagenta) 100%);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    /* right: -150px; */
+    top: 10px;  
+}
+
+.smallbox2{
+    height: 20px;
+    width: 40%;
+    background-color: white;
+    /* border-top-left-radius: 2px;
+    border-top-right-radius: 2px; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    left: 30%;
+}
+
+.pfp{
+    width: 10%;
+    border-radius: 50% 50% 50% 50%;
+    position: relative;
+    left: 10%;
+    top: 9%;
+    border: 2px solid  white;
+}
+
+.arrow{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: relative;
+    left: 7%;
+    bottom: 6%;
+}
+
+.name{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    left: 85px;
+    bottom: 27px;
+    font-size: 15px;
+}
+
+.bio{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    color: white;
+    position: relative;
+    bottom: 29px;
+    left: 85px;
+    font-size: 10px;
+}
+
+.dots{
+    width: 50px;
+    height: 15px;
+    background-image: radial-gradient(circle, white 1.5px, transparent 1px);
+    background-size: 100% 33.33%;
+    position: relative;
+    bottom: 52px;
+    left: 250px;
+}
+
+.attribution{
+    position: absolute;
+    top: 97%;
+    left: 80%;
+    color: var(--darkgrayishviolet);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+a{
+    border-radius: 3px;
+    color: hsl(264, 100%, 81%);
+    font-weight:bold;
+    opacity: 0.8;
+    text-decoration:none;
+}
+  
+a:hover {
+    transition: color .9s;
+    color:hsl(265, 34%, 71%);
+}
+
+.content{
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    width: 450px;
+}
+
+.heading{
+    color: var(--verydarkdesaturatedviolet);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.info{
+    padding-top: 5%;
+    color: var(--grayishblue);
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 1px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.placeholder{
+    height: 560px;
+    width: 95%;
+    background-color: rgb(243, 243, 243);
+    position: relative;
+    border-radius: 0 0 35px 35px;
+}
+
+.text1{
+    background-color: var(--lightpurplegradient);
+    width: 68%;
+    padding: 3%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    position: relative;
+    top: 2%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300px;
+    font-size: 13px;
+    color: var(--moderateviolet);
+    left: 3%;
+}
+
+.text2{
+    background-color: var(--lightpurplegradient);
+    width: 68%;
+    padding: 3%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    position: relative;
+    top: 4%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300px;
+    font-size: 13px;
+    color: var(--moderateviolet);
+    left: 3%;
+}
+
+.dog1{
+    border-radius: 15px 15px 15px 15px;
+    width:20%
+}
+
+.dog2{
+    border-radius: 15px 15px 15px 15px;
+    width:20%
+}
+
+.dog3{
+    border-radius: 15px 15px 15px 15px;
+    width:20%
+}
+
+.dogimages{
+    position: relative;
+    left: 35%;
+    top:6%;
+}
+
+.text3{
+    background-color: white;
+    width: 68%;
+    padding: 3%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    position: relative;
+    top: 7%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300px;
+    font-size: 13px;
+    color: black;
+    left:30%;
+}
+
+.text4{
+    background-color: white;
+    width: 45%;
+    padding: 3%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    position: relative;
+    top: 9%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300px;
+    font-size: 13px;
+    color: black;
+    left:52%;
+}
+
+.text5{
+    background-color: var(--lightpurplegradient);
+    width: 68%;
+    padding: 3%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    position: relative;
+    top: 11%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300px;
+    font-size: 13px;
+    color: var(--moderateviolet);
+    left: 3%;
+}
+
+.costbox1{
+    height: 50px;
+    width: 75%;
+    background-image: linear-gradient(to left, var(--lightviolet) 0%, var(--lightmagenta) 100%);
+    position: relative;
+    top: 13%;
+    left: 3%;
+    border-radius: 15px 15px 15px 0;
+}
+
+.circle1{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: lightgrey;
+    opacity: 0.6;
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+
+.time1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300px;
+    font-size: 13px;
+    color: white;
+    position: relative;
+    left: 18%;
+    bottom: 8%;
+    opacity: 0.8;
+}
+
+.cost1{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 78%;
+    bottom: 45%;
+}
+
+.costbox2{
+    height: 50px;
+    width: 75%;
+    background-image: linear-gradient(to left, var(--lightviolet) 0%, var(--lightmagenta) 100%);
+    position: relative;
+    top: 15%;
+    left: 3%;
+    border-radius: 15px 15px 15px 0;
+}
+
+.circle2{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: lightgrey;
+    opacity: 0.6;
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+
+.time2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300px;
+    font-size: 13px;
+    color: white;
+    position: relative;
+    left: 18%;
+    bottom: 8%;
+    opacity: 0.8;
+}
+
+.cost2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 78%;
+    bottom: 45%;
+}
+
+.message{
+    height: 50px;
+    width: 95%;
+    background-color: white;
+    position: relative;
+    top:17%;
+    left: 2.5%;
+    border-radius: 35px 35px 35px 35px;
+    font-family: 'Rubik', sans-serif;
+    color: grey;
+    font-size: 14px;
+}
+
+.text6{
+    position: relative;
+    top: 28%;
+    left: 10%;
+    opacity: 0.8;
+}
+
+.bluecircle{
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    position: relative;
+    background-color: hsl(271, 36%, 24%);
+    bottom: 20%;
+    left: 83%;
+}
+
+.arrow2{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: relative;
+    top: 25%;
+    left:30%;
+}
