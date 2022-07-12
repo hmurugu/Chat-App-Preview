@@ -32,11 +32,13 @@ The challenge is to build out QR code component and get it looking as close to t
 - HTML
 - CSS
 
+###Additions
+I've also added a PHP component for the contact me page, apart from the Front End challenge itself.
+
+
 <hr>
 
 <div>
 <p align = "right"> hmurugu 2022 </p>
 </div>
 
-###Additions
-I've also added a PHP component for the contact me page, apart from the Front End challenge itself.
