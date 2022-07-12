@@ -7,6 +7,7 @@
     --lightpurplegradient: hsl(268, 40%, 91%);
     --verydarkdesaturatedviolet: hsl(271, 36%, 24%);
     --moderateviolet: hsl(276, 55%, 52%);
+    --bg: hsl(266, 100%, 96%);
 }
 
 *{
@@ -28,6 +29,7 @@ html, body {
     border-radius: 0 0 80% 80%;
     position: absolute;
     left: -150px;
+    bottom: 15%;
 }
 
 .box2{
@@ -36,7 +38,7 @@ html, body {
     background-image: linear-gradient(to top, var(--lightgrayishviolet) 80%, var(--lightpurplegradient) 100%);
     border-radius: 50% 50% 0 0;
     position: absolute;
-    right: -150px;
+    right: -190px;
     top: 120px;
 }
 
@@ -421,4 +423,75 @@ a:hover {
     position: relative;
     top: 25%;
     left:30%;
+}
+
+.box3{
+    height: 900px;
+    width: 35%;
+    background-image: linear-gradient(to bottom, var(--lightmagenta) 0%, var(--lightviolet) 80%);
+    border-radius: 0 0 80% 80%;
+    position: absolute;
+    left: -150px;
+    bottom: 15%;
+    /* opacity: 0.1; */
+    transform: skew(-14deg)
+}
+
+.box4{
+    height: 900px;
+    width: 35%;
+    background-image: linear-gradient(to bottom, var(--lightmagenta) 0%, var(--lightviolet) 80%);
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    right: -190px;
+    top: 35%;
+    opacity: 0.2;
+    transform: skew(-14deg)
+}
+
+fieldset{
+    border-style: none;
+    position: absolute;
+    left: 35%;
+    top: 28%;
+}
+
+.top{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    width: 20%;
+    align-content: center;
+}
+
+.b{
+    appearance: button;
+    background-color: var(--verydarkdesaturatedviolet);
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: var(--lightpurplegradient) 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Rubik',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 5px 10px 0;
+    padding: 12px 40px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    position: relative;
+    left: 30%;
+}
+
+
+.b:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.b:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
 }
