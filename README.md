@@ -31,8 +31,9 @@ The challenge is to build out QR code component and get it looking as close to t
 
 - HTML
 - CSS
+- PHP
 
-###Additions
+### Additions
 I've also added a PHP component for the contact me page, apart from the Front End challenge itself.
 
 
